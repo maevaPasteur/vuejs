@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+    <style>
+        .success {
+            border: solid 1px green;
+        }
+        .error {
+            border: solid 1px red;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+
+    <p>prénom {{firstname}}</p>
+    <p>nom {{lastname}}</p>
+    <p>nom complet <input type="text" v-model="fullname"></p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.0/vue.js" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
