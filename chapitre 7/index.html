@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+    <style>
+        .message {
+            padding: 20px;
+            margin: 20px 0;
+            border: solid 1px red;
+        }
+        i {
+            cursor: pointer;
+            border: solid 1px black;
+            float:right;
+            clear:right;
+            padding: 10px;
+        }
+        form {
+            padding: 20px;
+            background-color: #efefef;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <form-user v-model="user">
+        <div slot="header">Petit header</div>
+        <div slot="footer">{{ user }}</div>
+    </form-user>
+    <br><br>
+    <p>utilisateur : {{ user.firstname }} {{ user.lastname }}</p>
+    <br><br>
+    <message myClass="success" :message="message" header="Attention" v-if="alert" @close="hideAlert"></message>
+    <button @click="showAlert" v-if="!alert">Alerter</button>
+    <counter :start="3"></counter>
+    <counter/>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.0/vue.js" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
