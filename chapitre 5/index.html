@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+    <style>
+        .s1 {
+            border: solid 1px green;
+            padding: 10px;
+        }
+        .s2 {
+            padding: 10px;
+            margin: 10px;
+            border: solid 1px red;
+            display: block;
+        }
+        a {
+            display: block;
+            padding: 10px;
+            margin: 10px;
+            border: solid 1px purple;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <div>
+        <p @click.self="demo" class="s1">
+            Je suis le parent<br>
+            <span @click.stop="demo" class="s2">
+                Je suis l'enfant
+                 <a href="www.google.com" @click.prevent="demo">mon lien</a>
+            </span>
+        </p>
+    </div>
+    <h1>{{ message }}</h1>
+    <form>
+        <h2>V-model normal</h2>
+        <p>La valeur change automatiquement</p>
+        <input type="text" v-model="message">
+        <h2>V-model lazy</h2>
+        <p>La valeur change quand on click à l'extérieur -> onchange</p>
+        <input type="text" v-model.lazy="message">
+        <h2>V-model trim</h2>
+        <p>Supprime les espaces inutiles</p>
+        <input type="text" v-model.trim="message">
+        <h2>@keyup event on space</h2>
+        <input type="text" @keyup.space="filter" v-model="message">
+        <h2>Custom directive</h2>
+        <input type="text" v-salut.a.b.c="message">
+    </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.0/vue.js" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
