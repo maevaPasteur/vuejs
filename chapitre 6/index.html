@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+    <style>
+        .s1 {
+            border: solid 1px green;
+            padding: 10px;
+        }
+        .s2 {
+            padding: 10px;
+            margin: 10px;
+            border: solid 1px red;
+            display: block;
+        }
+        a {
+            display: block;
+            padding: 10px;
+            margin: 10px;
+            border: solid 1px purple;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <p>{{ message | capitalize }}</p>
+    <p>{{ message | reverse }}</p>
+    <p>{{ message | reverse | capitalize }}</p>
+    <p>{{ '1409' | min }}min</p>
+    <p>{{ message2 | name('Julie') }}</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.0/vue.js" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
