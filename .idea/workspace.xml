@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="466b5e66-1d1a-456d-a280-994ae99f1002" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapitre 8/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapitre 8/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapitre_9/vuejs/src/components/counter/Counter.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapitre_9/vuejs/src/components/counter/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapitre_9/vuejs/src/components/store/NotificationStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,16 +36,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/chapitre 8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/chapitre 9" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/chapitre 9" />
       <recent name="$PROJECT_DIR$/chapitre 8" />
       <recent name="$PROJECT_DIR$/chapitre 7" />
       <recent name="$PROJECT_DIR$/chapitre 6" />
       <recent name="$PROJECT_DIR$/chapitre 5" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/chapitre_9/vuejs/src/components" />
+      <recent name="$PROJECT_DIR$/chapitre_9/vuejs/src/counter" />
       <recent name="$PROJECT_DIR$/tp4" />
     </key>
   </component>
@@ -72,7 +76,7 @@
       <updated>1587731208471</updated>
       <workItem from="1587731209902" duration="5781000" />
       <workItem from="1587976233720" duration="16000" />
-      <workItem from="1587984354238" duration="11116000" />
+      <workItem from="1587984354238" duration="15336000" />
     </task>
     <servers />
   </component>
